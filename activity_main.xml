@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Background logo -->
+    <ImageView
+        android:id="@+id/backgroundLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/surfunlogo1"
+        android:scaleType="centerCrop"
+        android:alpha="0.2"
+        android:contentDescription="Background Logo" />
+
+    <!-- Task 입력을 위한 EditText -->
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a new task"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Task 추가 버튼 -->
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_below="@id/editTextTask"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Task 목록 헤더 -->
+    <TextView
+        android:id="@+id/textViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tasks:"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_below="@id/buttonAddTask"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Task 목록을 표시할 ListView -->
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTasks"
+        android:background="@android:color/white" />
+
+    <!-- Task 할일 목록 보기 -->
+
+
+</RelativeLayout>
