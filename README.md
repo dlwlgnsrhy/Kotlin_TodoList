@@ -25,6 +25,8 @@
 4. **CheckBox**
    - 각 할 일 항목 옆에 `CheckBox`를 추가하여 완료 상태를 표시합니다.
    - `CheckBox` 상태에 따라 할 일 텍스트의 스타일(취소선, 색상 등)이 변경됩니다.
+   - ![image](https://github.com/user-attachments/assets/c3ff0ee4-5650-4c34-88e5-24a9682e2ea9)
+
 
 ### Trouble Shooting
 #### Layout 충돌 문제
